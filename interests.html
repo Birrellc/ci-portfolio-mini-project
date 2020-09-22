@@ -166,6 +166,20 @@
                     lng: -33.134766
                 }
             });
+            var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+            var locations = [
+                {lat: 40.785091, lng: -73.968285},
+                {lat: 43.285091, lng: -73.668285},
+                {lat: 41.385091, lng: -73.768285}
+            ];
+            var markers = locations.map(function(location, i){
+                return new google.maps.Marker({
+                    position: location,
+                    label: labels[i % labels.length]
+                });
+
+            });
         }
     </script>
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
