@@ -18,7 +18,6 @@ function initMap() {
     var marker = new google.maps.Marker({
         position: { lat: 42.4668, lng: -70.9495 },
         map: map,
-        icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
     });
 
     marker.addListener('click', function () {
